@@ -1,0 +1,44 @@
+"1","
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYWxsd2F2ZXNfc2V4dWFsaXR5X2JhcnBsb3QgPC0gZ2dwbG90KFxuICBzZXh1YWxpdGllcyxcbiAgYWVzKHggPSBTRVhNSU5JRCwgZmlsbCA9QUxMU0VYTUlOSUQpXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICApICtcbiAgZ2VvbV9iYXIocG9zaXRpb249XCJmaWxsXCIpICtcbiAgc2NhbGVfeV9jb250aW51b3VzKFxuICAgIG5hbWUgPSBcIiUgb2YgUGFydGljaXBhbnRzXCIsIFxuICAgIGxhYmVscyA9IHNjYWxlczo6bGFiZWxfcGVyY2VudCgpKStcbiAgc2NhbGVfZmlsbF9ncmV5KFxuICAgIGxhYmVscyA9IGMoXCJXYXZlIDFcIiwgXCJXYXZlIDJcIixcIldhdmUgM1wiKVxuICAgICAgICAgICAgICAgICAgICAgICApICtcbiAgbGFicyhcbiAgICB4ID0gXCJTZXh1YWwgTWlub3JpdHkgSWRlbnRpdHlcIixcbiAgICBmaWxsID0gXCJTdXJ2ZXkgV2F2ZVwiLFxuICAgIHRpdGxlID0gXCJBbGwgV2F2ZXNcIlxuICAgICAgKSArXG4gIHRoZW1lX2NsYXNzaWMoKVxuYGBgIn0= -->
+
+```r
+allwaves_sexuality_barplot <- ggplot(
+  sexualities,
+  aes(x = SEXMINID, fill =ALLSEXMINID)
+                                    ) +
+  geom_bar(position=\"fill\") +
+  scale_y_continuous(
+    name = \"% of Participants\", 
+    labels = scales::label_percent())+
+  scale_fill_grey(
+    labels = c(\"Wave 1\", \"Wave 2\",\"Wave 3\")
+                       ) +
+  labs(
+    x = \"Sexual Minority Identity\",
+    fill = \"Survey Wave\",
+    title = \"All Waves\"
+      ) +
+  theme_classic()
+```
+
+<!-- rnb-source-end -->
+"
+"0","```r
+allwaves_sexuality_barplot <- ggplot(
+  sexualities,
+  aes(x = SEXMINID, fill =ALLSEXMINID)
+                                    ) +
+  geom_bar(position=\"fill\") +
+  scale_y_continuous(
+    name = \"% of Participants\", 
+    labels = scales::label_percent())+
+  scale_fill_grey(
+    labels = c(\"Wave 1\", \"Wave 2\",\"Wave 3\")
+                       ) +
+  labs(
+    x = \"Sexual Minority Identity\",
+    fill = \"Survey Wave\",
+    title = \"All Waves\"
+      ) +
+  theme_classic()
+```"
