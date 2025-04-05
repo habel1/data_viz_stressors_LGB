@@ -2,10 +2,8 @@
 title: "Stressors in the LGB Population"
 author: "Zoe Habel"
 output:
-  html_notebook: default
-  html_document:
-    df_print: paged
-  pdf_document: default
+  github_document:
+  html_notebook:
 ---
 
 ```{r include=F}
